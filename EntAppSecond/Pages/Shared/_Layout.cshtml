@@ -12,24 +12,43 @@
 
 </head>
 <body>
-    <h3>Coming from the layout page</h3>
+    <div id="Header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://localhost:65525/Shared/BootStrapTest">Home</a></li>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 12/02/2019 Stephen Aitken</p>
-        </footer>
+                        <li><a href="http://localhost:65525/Shared/BootStrapTest2">Page 2</a></li>
+                        <li><a href="http://localhost:65525/Shared/BootStrapTest3">Page 3</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </div>
+        <h3>Coming from the layout page</h3>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 12/02/2019 Stephen Aitken</p>
+            </footer>
+        </div>
 
-
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-
-    @RenderSection("Scripts", required: false)
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        @RenderSection("Scripts", required: false)
 </body>
 </html>
